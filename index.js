@@ -5,10 +5,10 @@ const app = express();
 const PORT = process.env.PORT || 3003;
 
 const db = mysql.createConnection({
-    host: 'demo-rds.ccs2bkukboxm.ap-south-1.rds.amazonaws.com',
+   host: 'demo-rds.cf8c86acigsq.ap-southeast-2.rds.amazonaws.com',
   user: 'admin',
   password: 'Amodh1234',
-  database: 'demoo'
+  database: 'performance_schema'
 });
 
 db.connect();
