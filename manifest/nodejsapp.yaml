@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: products-service
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: products-service
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: products-service
-        image: 288761769499.dkr.ecr.ap-south-1.amazonaws.com/products-services:latest
+        image: 288761769499.dkr.ecr.ap-south-1.amazonaws.com/products-services:amodh
         ports:
         - containerPort: 3003
         env:
